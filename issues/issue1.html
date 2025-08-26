@@ -1,0 +1,201 @@
+<html class="site-scrollbar" spellcheck="true" data-wf-site="641274e742cb313e92c2bda9" data-wf-page="641d2391d3455ba8d62ee4f6" lang="en"><head><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><style>html { font-size: 16px; }</style><meta charset="utf-8"><title>Webflow</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="https://d3e54v103j8qbb.cloudfront.net/gen/css/designer-canvas.bb449e336a7971d5.css" crossorigin="anonymous"><style data-meta="default styles"></style><style>
+    .gsap-marker-end,
+    .gsap-marker-scroller-end,
+    .gsap-marker-scroller-start,
+    .gsap-marker-start {
+      color: transparent !important;
+      font-size: 11.5px !important;
+      letter-spacing: -.115px !important;
+      padding: 0 !important;
+      height: 16px !important;
+      border: none !important
+    }
+    
+    .gsap-marker-end,
+    .gsap-marker-start {
+      border-top-left-radius: 3px !important;
+      border-bottom-left-radius: 3px !important
+    }
+    
+    .gsap-marker-scroller-end,
+    .gsap-marker-scroller-start {
+      border-top-right-radius: 3px !important;
+      border-bottom-right-radius: 3px !important
+    }
+    
+    .gsap-marker-scroller-start,
+    .gsap-marker-start {
+      background-color: #259d4d !important
+    }
+    
+    .gsap-marker-end,
+    .gsap-marker-scroller-end {
+      background-color: #e42f3a !important
+    }
+    
+    .gsap-marker-scroller-start {
+      width: 80px !important;
+      right: 145px !important
+    }
+    
+    .gsap-marker-scroller-end {
+      width: 73px !important
+    }
+    
+    .gsap-marker-start {
+      width: 34px !important;
+      left: auto !important;
+      right: 244px !important
+    }
+    
+    .gsap-marker-end {
+      width: 29px !important;
+      left: auto !important;
+      right: 100px !important
+    }
+    
+    .gsap-marker-scroller-end {
+      left: auto !important;
+      right: 8px !important
+    }
+    
+    .gsap-marker-end:before {
+      content: "End"
+    }
+    .gsap-marker-start:before {
+      content: "Start"
+    }
+    .gsap-marker-scroller-end:before {
+      content: "Scroller end"
+    }
+    .gsap-marker-scroller-start:before {
+      content: "Scroller start"
+    }
+    
+    .gsap-marker-end:nth-child(5):before {
+      content: "End 2"
+    }
+    .gsap-marker-end:nth-child(9):before {
+      content: "End 3"
+    }
+    .gsap-marker-end:nth-child(13):before {
+      content: "End 4"
+    }
+    .gsap-marker-end:nth-child(17):before {
+      content: "End 5"
+    }
+    
+    
+    .gsap-marker-start:nth-child(6):before {
+      content: "Start 2"
+    }
+    .gsap-marker-start:nth-child(10):before {
+      content: "Start 3"
+    }
+    .gsap-marker-start:nth-child(14):before {
+      content: "Start 4"
+    }
+    .gsap-marker-start:nth-child(18):before {
+      content: "Start 5"
+    }
+    
+    .gsap-marker-scroller-start:nth-child(8):before {
+      content: "Scroller start 2"
+    }
+    .gsap-marker-scroller-start:nth-child(12):before {
+      content: "Scroller start 3"
+    }
+    .gsap-marker-scroller-start:nth-child(16):before {
+      content: "Scroller start 4"
+    }
+    .gsap-marker-scroller-start:nth-child(20):before {
+      content: "Scroller start 5"
+    }
+    
+    .gsap-marker-scroller-end:nth-child(7):before {
+      content: "Scroller end 2"
+    }
+    .gsap-marker-scroller-end:nth-child(11):before {
+      content: "Scroller end 3"
+    }
+    .gsap-marker-scroller-end:nth-child(15):before {
+      content: "Scroller end 4"
+    }
+    .gsap-marker-scroller-end:nth-child(19):before {
+      content: "Scroller end 5"
+    }
+    
+    /* n2+ markers get slightly wider widths */
+    .gsap-marker-end:nth-child(n+5) {
+        width: 40px !important;
+        right: 114px !important;
+    }
+    .gsap-marker-start:nth-child(n+5) {
+        width: 45px !important;
+        right: 255px !important;
+    }
+    .gsap-marker-scroller-end:nth-child(n+5) {
+        width: 85px !important;
+    }
+    .gsap-marker-scroller-start:nth-child(n+5) {
+        width: 89px !important;
+    }
+    
+    .gsap-marker-end:after,
+    .gsap-marker-scroller-end:after,
+    .gsap-marker-scroller-start:after,
+    .gsap-marker-start:after {
+      width: 0;
+      height: 0;
+      top: 0;
+      position: absolute;
+      border-style: solid;
+      content: ''
+    }
+    
+    .gsap-marker-end:after,
+    .gsap-marker-start:after {
+      border-width: 0 10px 16px 0;
+      right: -10px
+    }
+    
+    .gsap-marker-scroller-end:after,
+    .gsap-marker-scroller-start:after {
+      border-width: 0 10px 16px 0;
+      transform: rotate(180deg);
+      left: -10px
+    }
+    
+    .gsap-marker-scroller-start:after,
+    .gsap-marker-start:after {
+      border-color: transparent transparent #259d4d
+    }
+    
+    .gsap-marker-end:after,
+    .gsap-marker-scroller-end:after {
+      border-color: transparent transparent #e42f3a
+    }
+    
+    .gsap-marker-end:before,
+    .gsap-marker-scroller-end:before,
+    .gsap-marker-scroller-start:before,
+    .gsap-marker-start:before {
+      color: #fff !important;
+      position: absolute !important;
+      top: 2px !important;
+      font-weight: 400 !important;
+      line-height: 1 !important;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto !important
+    }
+    
+    .gsap-marker-end:before,
+    .gsap-marker-start:before {
+      left: 5px !important
+    }
+    
+    .gsap-marker-scroller-end:before,
+    .gsap-marker-scroller-start:before {
+      left: auto !important;
+      right: 6px !important
+    }
+    </style><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js"></script><script src="/js/site/webflow.js"></script><style data-automation-id="custom-fonts"></style><link rel="stylesheet" type="text/css"><script type="text/javascript" src="https://www.paypal.com/sdk/js?client-id=sb&amp;merchant-id=XXX&amp;commit=false" data-uid-auto="uid_wozxfjdbvtrflvsisqpnlrprksvfvd"></script><noscript></noscript><script type="text/javascript" src="https://js.stripe.com/v3/"></script><noscript></noscript><script type="text/javascript" src="https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js"></script><noscript></noscript><style type="text/css" rel="stylesheet" id="main-styles"></style><style data-meta="local styles"></style><style id="grid-inflators"></style><link rel="stylesheet" type="text/css" id="canvas-fonts" href="https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Bodoni Moda:400|Changa One:400,400italic|Droid Sans:400,700|Droid Serif:400,700,400italic,700italic|Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Great Vibes:400|Inconsolata:400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:300,400,700,900,300italic,400italic,700italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Open Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Oswald:200,300,400,500,600,700|PT Sans:400,700,400italic,700italic|PT Serif:400,700,400italic,700italic|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Varela:400|Varela Round:400|Vollkorn:400,700,400italic,700italic&amp;subset=latin"></head><body data-w-id="641d2391d3455bb6792ee4f8" data-wf-id="[&quot;641d2391d3455bb6792ee4f8&quot;]" class="body-4"><div data-w-id="c3f34cab-fd90-5866-c77f-65e2719e3888" data-wf-id="[&quot;c3f34cab-fd90-5866-c77f-65e2719e3888&quot;]" class="div-block"><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77b9" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77b9&quot;]" class="header"><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77ba" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77ba&quot;]" class="header"><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77bb" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77bb&quot;]" class="metro-inner wide"><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77bc" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77bc&quot;]"><h4 data-w-id="179b03ce-510e-41e1-f124-021f7d3e77bd" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77bd&quot;]" class="tagline">Vida, arte y personalidades de las</h4></div><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77bf" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77bf&quot;]" class="flex header-flex"><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77c0" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77c0&quot;]" class="left-3"><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77c1" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77c1&quot;]" class="hamburger"><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77c2" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77c2&quot;]" class="line" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77c3" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77c3&quot;]" class="line" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div></div><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77c4" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77c4&quot;]" class="menu"><a data-w-id="179b03ce-510e-41e1-f124-021f7d3e77c5" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77c5&quot;]" href="/manifesto" class="menu-item active">Manifesto</a><a data-w-id="179b03ce-510e-41e1-f124-021f7d3e77c7" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77c7&quot;]" href="/about" class="menu-item">About</a><a data-w-id="179b03ce-510e-41e1-f124-021f7d3e77c9" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77c9&quot;]" href="/issues" class="menu-item">Issues</a><a data-w-id="179b03ce-510e-41e1-f124-021f7d3e77cb" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77cb&quot;]" href="https://cafecito.app/metropolis" class="menu-item">Donate</a></div></div><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77cd" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77cd&quot;]" class="middle-3"><a data-w-id="2bc83991-8024-1e04-c721-8a6cef2f42e2" data-wf-id="[&quot;2bc83991-8024-1e04-c721-8a6cef2f42e2&quot;]" href="/" class="w-inline-block w--current"><img src="https://cdn.prod.website-files.com/641274e742cb313e92c2bda9/641e3416e2af210dec6f31a2_metro_logo_pink.svg" loading="lazy" data-wf-id="[&quot;2bc83991-8024-1e04-c721-8a6cef2f42e3&quot;]" data-w-id="2bc83991-8024-1e04-c721-8a6cef2f42e3" alt="" class="image"></a></div><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77cf" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77cf&quot;]" class="right-3"><div data-w-id="179b03ce-510e-41e1-f124-021f7d3e77d0" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77d0&quot;]" class="menu"><a data-w-id="179b03ce-510e-41e1-f124-021f7d3e77d1" data-wf-id="[&quot;179b03ce-510e-41e1-f124-021f7d3e77d1&quot;]" href="/print" class="menu-item">Print</a></div></div></div></div></div></div><div data-w-id="c3f34cab-fd90-5866-c77f-65e2719e389f" data-wf-id="[&quot;c3f34cab-fd90-5866-c77f-65e2719e389f&quot;]" class="issues"><div data-w-id="c3f34cab-fd90-5866-c77f-65e2719e38a0" data-wf-id="[&quot;c3f34cab-fd90-5866-c77f-65e2719e38a0&quot;]" class="metro-inner"><div data-w-id="b8097dc8-cae9-87a1-fad1-60e587b7e36a" data-wf-id="[&quot;b8097dc8-cae9-87a1-fad1-60e587b7e36a&quot;]" class="flex space-around issue-flex"><img data-w-id="b7a1141b-72c7-5969-ea10-c550beee9f6a" loading="lazy" data-wf-id="[&quot;b7a1141b-72c7-5969-ea10-c550beee9f6a&quot;]" src="https://cdn.prod.website-files.com/641d2390ff58532258f3509e/6430a58f3030fd7227ad64da_MARCOS-PERCIAVALLE-1-300.jpg" alt="" class="issue-image"><div data-w-id="a5b510c3-7ba7-f5aa-bb8d-3620557fb7d2" data-wf-id="[&quot;a5b510c3-7ba7-f5aa-bb8d-3620557fb7d2&quot;]" class="issue-details"><h1 data-w-id="18d05c2a-9004-73fc-1099-9f1e8f125289" data-wf-id="[&quot;18d05c2a-9004-73fc-1099-9f1e8f125289&quot;]" class="issue-number">01</h1><h1 data-w-id="cbf24283-6cc5-d5b0-b2a2-0a63d05edb96" data-wf-id="[&quot;cbf24283-6cc5-d5b0-b2a2-0a63d05edb96&quot;]" class="issue-title">MARCOS PERCIAVALLE</h1><div data-w-id="51e4502e-1ffa-b4ee-0354-86f81564db2f" data-wf-id="[&quot;51e4502e-1ffa-b4ee-0354-86f81564db2f&quot;]" class="flex issue-date"><h4 data-w-id="b637cbac-f34d-b3ad-3fde-b69f58b8b1f5" data-wf-id="[&quot;b637cbac-f34d-b3ad-3fde-b69f58b8b1f5&quot;]" class="issue-date">AGOSTO </h4><h4 data-w-id="bd14927d-22de-1d07-a237-73f95c7aec9d" data-wf-id="[&quot;bd14927d-22de-1d07-a237-73f95c7aec9d&quot;]" class="issue-date">A$30</h4><div data-w-id="4400197f-097a-4650-97b5-6fcba981db95" data-wf-id="[&quot;4400197f-097a-4650-97b5-6fcba981db95&quot;]" class="flex-stack hide"><h4 data-w-id="7798fba7-6445-7049-fd45-13a947118de2" data-wf-id="[&quot;7798fba7-6445-7049-fd45-13a947118de2&quot;]" class="issue-date">Daniel Ripoll</h4><h4 data-w-id="f7db0e66-7580-f0b4-74eb-73a8183630fe" data-wf-id="[&quot;f7db0e66-7580-f0b4-74eb-73a8183630fe&quot;]" class="issue-date">Gogó Husso</h4></div></div><div data-w-id="07c0f8a9-539a-cd9a-71bf-ca11b8fd1b7e" data-wf-id="[&quot;07c0f8a9-539a-cd9a-71bf-ca11b8fd1b7e&quot;]" class="donate-button"><a data-w-id="165ae988-cd26-62a3-9735-94cb61aa2108" data-wf-id="[&quot;165ae988-cd26-62a3-9735-94cb61aa2108&quot;]" href="https://cafecito.app/metropolis" class="link-block-2 w-inline-block"></a><div data-w-id="60fd712c-31c9-aa61-76a3-fe5122effb95" data-wf-id="[&quot;60fd712c-31c9-aa61-76a3-fe5122effb95&quot;]">Donate</div></div><div data-w-id="20302c10-b7e3-baf0-4c41-7edfc045f212" data-wf-id="[&quot;20302c10-b7e3-baf0-4c41-7edfc045f212&quot;]" class="donate-button download"><a data-w-id="03000006-7710-1b09-e8ab-dcd27c76b1cb" data-wf-id="[&quot;03000006-7710-1b09-e8ab-dcd27c76b1cb&quot;]" href="https://uploads-ssl.webflow.com/641d2390ff58532258f3509e/64601187f9653f35028329fd_MARCOS%20PERCIAVALE%20pdf%20baja_Optimizer.pdf" class="link-block w-inline-block"></a><div data-w-id="20302c10-b7e3-baf0-4c41-7edfc045f213" data-wf-id="[&quot;20302c10-b7e3-baf0-4c41-7edfc045f213&quot;]" class="text-block-3"><strong data-w-id="42be0be8-6d57-d3c5-333d-f8c812d329d9" data-wf-id="[&quot;42be0be8-6d57-d3c5-333d-f8c812d329d9&quot;]">descargar pdf</strong></div></div><div data-w-id="7c86dcc1-e08d-b302-ce1c-7431e2eec9bd" data-wf-id="[&quot;7c86dcc1-e08d-b302-ce1c-7431e2eec9bd&quot;]"><div data-w-id="c2493c5e-2b35-bb08-dd48-add93c3c6457" data-wf-id="[&quot;c2493c5e-2b35-bb08-dd48-add93c3c6457&quot;]" class="rich-text-block w-richtext"><p data-w-id="994cd6f9-7096-23e6-5150-ecd606a98181" data-wf-id="[&quot;994cd6f9-7096-23e6-5150-ecd606a98181&quot;]">Director Daniel Ripoll-Coordinador Periodístico: Juan Manuel Cibeira- Redactora especial: Helena Goñi-Contribuciones periodísticas: Hebe Blanco, Elizabeth Checa,Roque de Pedro, Selva Echagüe, Cristina Fernández Barragán, Daniel Lauría, ErnestoMallo, Osvaldo Marzullo, Edinete Melló, Francisco Daniel Muñoz.-Contribuciones fotográficas: Rubén Andón, Juan Mestichelli,Alejandra Palacios, Emmanuele Riba, Gabriel Rocca - Corresponsalías -Fabián Ross (Nueva York)- Mercedes Arrúa (París) - Juán Milán (Rio de Janeiro) – Arte Gogó Husso (tapa y diseños) Osear Botto, Walter Martínez (Diagramadores)</p><p data-w-id="ab9d75c7-87bf-ea97-ab6d-4cc330b8d7cc" data-wf-id="[&quot;ab9d75c7-87bf-ea97-ab6d-4cc330b8d7cc&quot;]"><strong data-w-id="bfdd8e0a-aaf8-2a55-3187-b20154eb5a2d" data-wf-id="[&quot;bfdd8e0a-aaf8-2a55-3187-b20154eb5a2d&quot;]">Palabras Clave</strong></p><p data-w-id="d97ddb8c-30c6-3a2a-1422-42f4a55067cb" data-wf-id="[&quot;d97ddb8c-30c6-3a2a-1422-42f4a55067cb&quot;]">Flavia Mihanovich - Jose Bustillo-Gabriela Antoniazzi -Jose Rojo-Andrea Frigerio-Nota De Tapa: Carlos Perciavalle - Diplomacia: Chantal Rigoureau - Arquitectura: Rodolfo Livingston - Personalidades: Egle Martin-Fotografia: Annemarie Heinrich-Aventuras: Jaime De Lara Sanchez-Paris: Margaux Hemingway-Bolek Greczinsky - Rio De Janeiro: Jose Wilker - Rock: Michel Peyronel - Escena: Miguel Angel Sola-Martha Lynch - Fashion: Laura Ocampo - Arte: Alberto Elia - CaféOle - Exit – Voyage</p></div></div></div></div></div><div data-w-id="2cb70a4a-0389-99ca-a1c3-7be8c926ee12" data-wf-id="[&quot;2cb70a4a-0389-99ca-a1c3-7be8c926ee12&quot;]" class="div-block-4"><div data-w-id="37e8dedc-2246-3a5e-c54f-0836721f6d2a" data-wf-id="[&quot;37e8dedc-2246-3a5e-c54f-0836721f6d2a&quot;]" class="w-dyn-list"><script type="text/x-wf-template" id="wf-template-37e8dedc-2246-3a5e-c54f-0836721f6d2b">%3Cdiv%20data-w-id%3D%2237e8dedc-2246-3a5e-c54f-0836721f6d2c_instance-0%22%20data-wf-id%3D%22%5B%26quot%3B37e8dedc-2246-3a5e-c54f-0836721f6d2c_instance-0%26quot%3B%5D%22%20data-dyn-label%3D%22Group%2035.jpg%22%20role%3D%22listitem%22%20class%3D%22w-dyn-item%20w-dyn-repeater-item%22%3E%3Cdiv%20data-w-id%3D%2208a68b22-d33c-c627-63e7-da60e5452131_instance-0%22%20data-wf-id%3D%22%5B%26quot%3B08a68b22-d33c-c627-63e7-da60e5452131_instance-0%26quot%3B%5D%22%20class%3D%22div-block-3%22%3E%3Cimg%20data-w-id%3D%22481b575d-c9e7-d8a4-2899-1530f1439d29_instance-0%22%20loading%3D%22lazy%22%20data-wf-id%3D%22%5B%26quot%3B481b575d-c9e7-d8a4-2899-1530f1439d29_instance-0%26quot%3B%5D%22%20src%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2F641d2390ff58532258f3509e%2F64485aef6e26de18188ebd12_Group%25209.jpg%22%20alt%3D%22%22%20class%3D%22image-5%22%2F%3E%3C%2Fdiv%3E%3C%2Fdiv%3E</script><div fs-cmsslider-element="list" data-w-id="37e8dedc-2246-3a5e-c54f-0836721f6d2b" data-wf-id="[&quot;37e8dedc-2246-3a5e-c54f-0836721f6d2b&quot;]" role="list" class="w-dyn-items"><div data-w-id="37e8dedc-2246-3a5e-c54f-0836721f6d2c_instance-0" data-wf-id="[&quot;37e8dedc-2246-3a5e-c54f-0836721f6d2c_instance-0&quot;]" data-dyn-label="Group 35.jpg" role="listitem" class="w-dyn-item w-dyn-repeater-item"><div data-w-id="08a68b22-d33c-c627-63e7-da60e5452131_instance-0" data-wf-id="[&quot;08a68b22-d33c-c627-63e7-da60e5452131_instance-0&quot;]" class="div-block-3"><img data-w-id="481b575d-c9e7-d8a4-2899-1530f1439d29_instance-0" loading="lazy" data-wf-id="[&quot;481b575d-c9e7-d8a4-2899-1530f1439d29_instance-0&quot;]" src="https://cdn.prod.website-files.com/641d2390ff58532258f3509e/64485aef6e26de18188ebd12_Group%209.jpg" alt="" class="image-5"></div></div><div data-w-id="37e8dedc-2246-3a5e-c54f-0836721f6d2c_instance-1" data-wf-id="[&quot;37e8dedc-2246-3a5e-c54f-0836721f6d2c_instance-1&quot;]" data-dyn-label="Group 31.jpg" role="listitem" class="w-dyn-item w-dyn-repeater-item"><div data-w-id="08a68b22-d33c-c627-63e7-da60e5452131_instance-1" data-wf-id="[&quot;08a68b22-d33c-c627-63e7-da60e5452131_instance-1&quot;]" class="div-block-3"><img data-w-id="481b575d-c9e7-d8a4-2899-1530f1439d29_instance-1" loading="lazy" data-wf-id="[&quot;481b575d-c9e7-d8a4-2899-1530f1439d29_instance-1&quot;]" src="https://cdn.prod.website-files.com/641d2390ff58532258f3509e/64485af0dd145fbc5bbd585d_Group%2010.jpg" alt="" class="image-5"></div></div><div data-w-id="37e8dedc-2246-3a5e-c54f-0836721f6d2c_instance-2" data-wf-id="[&quot;37e8dedc-2246-3a5e-c54f-0836721f6d2c_instance-2&quot;]" data-dyn-label="Group 29.jpg" role="listitem" class="w-dyn-item w-dyn-repeater-item"><div data-w-id="08a68b22-d33c-c627-63e7-da60e5452131_instance-2" data-wf-id="[&quot;08a68b22-d33c-c627-63e7-da60e5452131_instance-2&quot;]" class="div-block-3"><img data-w-id="481b575d-c9e7-d8a4-2899-1530f1439d29_instance-2" loading="lazy" data-wf-id="[&quot;481b575d-c9e7-d8a4-2899-1530f1439d29_instance-2&quot;]" src="https://cdn.prod.website-files.com/641d2390ff58532258f3509e/64485af0ba09003969c27b37_Group%2011.jpg" alt="" class="image-5"></div></div></div><div data-w-id="37e8dedc-2246-3a5e-c54f-0836721f6d2d" data-wf-id="[&quot;37e8dedc-2246-3a5e-c54f-0836721f6d2d&quot;]" class="w-dyn-hide w-dyn-empty"><div data-w-id="37e8dedc-2246-3a5e-c54f-0836721f6d2e" data-wf-id="[&quot;37e8dedc-2246-3a5e-c54f-0836721f6d2e&quot;]">No items found.</div></div></div></div><div data-w-id="751df1ca-7c58-fce7-3e7e-c7d103a48582" data-wf-id="[&quot;751df1ca-7c58-fce7-3e7e-c7d103a48582&quot;]" class="other-issues"><div data-w-id="698709af-2539-272f-f520-92d260535e3f" data-wf-id="[&quot;698709af-2539-272f-f520-92d260535e3f&quot;]" class="metro-inner wide"><h1 data-w-id="dba5445d-55c4-c00a-f092-76bd8243cdcf" data-wf-id="[&quot;dba5445d-55c4-c00a-f092-76bd8243cdcf&quot;]" class="other-issue-title">Explorar Otros Issues</h1><div data-w-id="698709af-2539-272f-f520-92d260535e43" data-wf-id="[&quot;698709af-2539-272f-f520-92d260535e43&quot;]" class="flex header-flex horizontal-flex"><div data-w-id="b2180f5c-a48c-42fa-b25b-71f08768a216" data-wf-id="[&quot;b2180f5c-a48c-42fa-b25b-71f08768a216&quot;]" class="w-dyn-list"><div data-w-id="b2180f5c-a48c-42fa-b25b-71f08768a217" data-wf-id="[&quot;b2180f5c-a48c-42fa-b25b-71f08768a217&quot;]" role="list" class="other-issues-flex w-dyn-items"><div data-w-id="b2180f5c-a48c-42fa-b25b-71f08768a218_instance-0" data-wf-id="[&quot;b2180f5c-a48c-42fa-b25b-71f08768a218_instance-0&quot;]" data-dyn-label="Issues: SUSANA GIMINEZ" role="listitem" class="collection-item w-dyn-item"><div data-w-id="93265a88-c55b-69b9-f69e-9a1073d83b61_instance-0" data-wf-id="[&quot;93265a88-c55b-69b9-f69e-9a1073d83b61_instance-0&quot;]"><div data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a19_instance-0" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a19_instance-0&quot;]" class="div-block-2"><a data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a1a_instance-0" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a1a_instance-0&quot;]" href="/issues/susana-giminez" class="w-inline-block"><img data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a1b_instance-0" loading="lazy" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a1b_instance-0&quot;]" src="https://cdn.prod.website-files.com/641d2390ff58532258f3509e/644857597111d73033a2b659_SUSANA-GIMENEZ-1-300dpi-edit_.jpg" alt="" class="image-4"></a></div><div data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2517_instance-0" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2517_instance-0&quot;]" class="flex space-between"><h4 data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2518_instance-0" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2518_instance-0&quot;]" class="heading-2">13</h4><h4 data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2519_instance-0" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2519_instance-0&quot;]" class="heading">SUSANA GIMINEZ</h4></div></div></div><div data-w-id="b2180f5c-a48c-42fa-b25b-71f08768a218_instance-1" data-wf-id="[&quot;b2180f5c-a48c-42fa-b25b-71f08768a218_instance-1&quot;]" data-dyn-label="Issues: CHARLY GARCIA" role="listitem" class="collection-item w-dyn-item"><div data-w-id="93265a88-c55b-69b9-f69e-9a1073d83b61_instance-1" data-wf-id="[&quot;93265a88-c55b-69b9-f69e-9a1073d83b61_instance-1&quot;]"><div data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a19_instance-1" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a19_instance-1&quot;]" class="div-block-2"><a data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a1a_instance-1" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a1a_instance-1&quot;]" href="/issues/charly-garcia" class="w-inline-block"><img data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a1b_instance-1" loading="lazy" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a1b_instance-1&quot;]" src="https://cdn.prod.website-files.com/641d2390ff58532258f3509e/64484f9019493d4c63a50a00_CHARLY-GARCIA-1_-edit_.jpg" alt="" class="image-4"></a></div><div data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2517_instance-1" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2517_instance-1&quot;]" class="flex space-between"><h4 data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2518_instance-1" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2518_instance-1&quot;]" class="heading-2">06</h4><h4 data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2519_instance-1" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2519_instance-1&quot;]" class="heading">CHARLY GARCIA</h4></div></div></div><div data-w-id="b2180f5c-a48c-42fa-b25b-71f08768a218_instance-2" data-wf-id="[&quot;b2180f5c-a48c-42fa-b25b-71f08768a218_instance-2&quot;]" data-dyn-label="Issues: ISABEL SARLI" role="listitem" class="collection-item w-dyn-item"><div data-w-id="93265a88-c55b-69b9-f69e-9a1073d83b61_instance-2" data-wf-id="[&quot;93265a88-c55b-69b9-f69e-9a1073d83b61_instance-2&quot;]"><div data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a19_instance-2" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a19_instance-2&quot;]" class="div-block-2"><a data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a1a_instance-2" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a1a_instance-2&quot;]" href="/issues/isabel-sarli" class="w-inline-block"><img data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a1b_instance-2" loading="lazy" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a1b_instance-2&quot;]" src="https://cdn.prod.website-files.com/641d2390ff58532258f3509e/64484d3b6e26de47908dc5f1_ISABEL%20SARLI%201%20300dpi.png" alt="" class="image-4"></a></div><div data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2517_instance-2" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2517_instance-2&quot;]" class="flex space-between"><h4 data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2518_instance-2" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2518_instance-2&quot;]" class="heading-2">03</h4><h4 data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2519_instance-2" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2519_instance-2&quot;]" class="heading">ISABEL SARLI</h4></div></div></div><div data-w-id="b2180f5c-a48c-42fa-b25b-71f08768a218_instance-3" data-wf-id="[&quot;b2180f5c-a48c-42fa-b25b-71f08768a218_instance-3&quot;]" data-dyn-label="Issues: SUSU PECORARO" role="listitem" class="collection-item w-dyn-item"><div data-w-id="93265a88-c55b-69b9-f69e-9a1073d83b61_instance-3" data-wf-id="[&quot;93265a88-c55b-69b9-f69e-9a1073d83b61_instance-3&quot;]"><div data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a19_instance-3" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a19_instance-3&quot;]" class="div-block-2"><a data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a1a_instance-3" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a1a_instance-3&quot;]" href="/issues/susu-pecoraro" class="w-inline-block"><img data-w-id="c596337c-a18d-5d8f-9a7f-4effd3273a1b_instance-3" loading="lazy" data-wf-id="[&quot;c596337c-a18d-5d8f-9a7f-4effd3273a1b_instance-3&quot;]" src="https://cdn.prod.website-files.com/641d2390ff58532258f3509e/6430a69a8a585e4e7ba8f1d3_SUSU-PECORARO-1.jpg" alt="" class="image-4"></a></div><div data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2517_instance-3" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2517_instance-3&quot;]" class="flex space-between"><h4 data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2518_instance-3" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2518_instance-3&quot;]" class="heading-2">04</h4><h4 data-w-id="cc14ed14-397b-66b2-f9e4-96fc62fd2519_instance-3" data-wf-id="[&quot;cc14ed14-397b-66b2-f9e4-96fc62fd2519_instance-3&quot;]" class="heading">SUSU PECORARO</h4></div></div></div></div><div data-w-id="b2180f5c-a48c-42fa-b25b-71f08768a219" data-wf-id="[&quot;b2180f5c-a48c-42fa-b25b-71f08768a219&quot;]" class="w-dyn-hide w-dyn-empty"><div data-w-id="b2180f5c-a48c-42fa-b25b-71f08768a21a" data-wf-id="[&quot;b2180f5c-a48c-42fa-b25b-71f08768a21a&quot;]">No items found.</div></div></div></div></div></div></div></div><div data-w-id="cb1cf5ea-d788-d458-4656-92d667ae070e" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae070e&quot;]" class="footer"><div data-w-id="cb1cf5ea-d788-d458-4656-92d667ae070f" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae070f&quot;]" class="metro-inner wide"><div data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0710" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0710&quot;]" class="flex"><div data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0711" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0711&quot;]" class="left-30"><img src="https://cdn.prod.website-files.com/641274e742cb313e92c2bda9/641cd4c57c3983638eeada98_EXIT.svg" loading="lazy" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0712&quot;]" data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0712" alt="" class="image-3"></div><div data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0713" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0713&quot;]" class="right footer-right"><h4 data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0714" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0714&quot;]" class="footer-text"><strong data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0715" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0715&quot;]">Contactate con nosotrxs</strong></h4><div data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0717" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0717&quot;]" class="div-block-8 submit-button contact-button"><a data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0718" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0718&quot;]" href="mailto:dupuy.franco@gmail.com" class="link-block-3 w-inline-block"></a><div data-w-id="cb1cf5ea-d788-d458-4656-92d667ae0719" data-wf-id="[&quot;cb1cf5ea-d788-d458-4656-92d667ae0719&quot;]" class="cotact-button-text">CONTACT</div></div></div></div></div></div><div data-w-id="cb38447a-7279-fcea-88a7-58f4ad255abf" data-wf-id="[&quot;cb38447a-7279-fcea-88a7-58f4ad255abf&quot;]" class="logos flex logo-wrapper"><div data-w-id="cb38447a-7279-fcea-88a7-58f4ad255ac0" data-wf-id="[&quot;cb38447a-7279-fcea-88a7-58f4ad255ac0&quot;]" class="metro-inner wide logod"><img src="https://cdn.prod.website-files.com/641274e742cb313e92c2bda9/64601df0892d47d0681c1e1b_ba_logo.svg" loading="lazy" data-wf-id="[&quot;cb38447a-7279-fcea-88a7-58f4ad255ac1&quot;]" data-w-id="cb38447a-7279-fcea-88a7-58f4ad255ac1" alt="" class="logo"><img src="https://cdn.prod.website-files.com/641274e742cb313e92c2bda9/64601e4c02edee1b7003118e_CDCDF_logo.svg" loading="lazy" data-wf-id="[&quot;cb38447a-7279-fcea-88a7-58f4ad255ac2&quot;]" data-w-id="cb38447a-7279-fcea-88a7-58f4ad255ac2" alt="" class="logo custom-size"><img src="https://cdn.prod.website-files.com/641274e742cb313e92c2bda9/64601e0f349b1dfb49de2ea8_fna.svg" loading="lazy" data-wf-id="[&quot;cb38447a-7279-fcea-88a7-58f4ad255ac3&quot;]" data-w-id="cb38447a-7279-fcea-88a7-58f4ad255ac3" alt="" class="logo"></div></div><div data-w-id="b4902d96-0931-ae67-c68e-98816defafcf" data-wf-id="[&quot;b4902d96-0931-ae67-c68e-98816defafcf&quot;]" class="mobile-menu" style="display: none;"><div data-w-id="b4902d96-0931-ae67-c68e-98816defafd0" data-wf-id="[&quot;b4902d96-0931-ae67-c68e-98816defafd0&quot;]" class="mobile-menu-wrapper"><div data-w-id="b4902d96-0931-ae67-c68e-98816defafd1" data-wf-id="[&quot;b4902d96-0931-ae67-c68e-98816defafd1&quot;]" class="menu menu-mobile"><a data-w-id="b4902d96-0931-ae67-c68e-98816defafd2" data-wf-id="[&quot;b4902d96-0931-ae67-c68e-98816defafd2&quot;]" href="/manifesto" class="menu-item">Manifesto</a><a data-w-id="b4902d96-0931-ae67-c68e-98816defafd4" data-wf-id="[&quot;b4902d96-0931-ae67-c68e-98816defafd4&quot;]" href="/issues" class="menu-item">Issues</a><a data-w-id="27cc80df-7452-09fc-ccad-1cd87afd1b03" data-wf-id="[&quot;27cc80df-7452-09fc-ccad-1cd87afd1b03&quot;]" href="/about" class="menu-item">About</a><a data-w-id="b4902d96-0931-ae67-c68e-98816defafd6" data-wf-id="[&quot;b4902d96-0931-ae67-c68e-98816defafd6&quot;]" href="https://cafecito.app/metropolis" class="menu-item">Donate</a><a data-w-id="b4902d96-0931-ae67-c68e-98816defafd8" data-wf-id="[&quot;b4902d96-0931-ae67-c68e-98816defafd8&quot;]" href="/print" class="menu-item">Print</a></div></div></div><div id="lightbox-mountpoint" style="position: absolute;"></div></body></html>
